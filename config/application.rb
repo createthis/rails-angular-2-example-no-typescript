@@ -11,5 +11,7 @@ module RailsAngular2ExampleNoTypescript
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    # Explicitly add the 'node_modules' directory
+    config.assets.paths << Rails.root.join('node_modules')
   end
 end
