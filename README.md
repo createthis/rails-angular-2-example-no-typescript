@@ -25,10 +25,10 @@ The repo is here for posterity and to satisfy curiosity.
 on the Angular website at the time of this writing. I found googling for "Angular 2 ES5" was my
 best bet when attempting to find ES5 specific solutions to problems.
 
-    The second biggest problem is that top level components must be bootstrapped from
+1. The second biggest problem is that top level components must be bootstrapped from
 app/assets/javascripts/ng-app/app.module.js
 
-1. This means that if you include app.module.js in the asset pipeline, as I have done in this example,
+    This means that if you include app.module.js in the asset pipeline, as I have done in this example,
 you get precisely ONE top level component and you MUST include it on every Rails view, or else you
 get JS errors because Angular cannot bootstrap the top level component. Ideally, we would serve a 
 custom app.module.js for each Rails view that required Angular 2 functionality. Alternatively, it
